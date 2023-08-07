@@ -30,7 +30,8 @@ end_date = '2023-08-05'
 
 st.title("Nifty Price Log")
 col=st.columns((10,1))
-sheet_url=col[0].text_input("",placeholder="google sheet link",label_visibility="collapsed")
+
+sheet_url=col[0].text_input("",placeholder="google sheet link",label_visibility="collapsed",value=demo_url)
 
 st.info("Demo link : {}".format(demo_url))
 if "nifty_data" not in st.session_state:
